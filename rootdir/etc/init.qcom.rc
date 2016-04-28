@@ -858,7 +858,7 @@ on property:wifi.ftmd.load=false
     stop openwifi
 
 #Modify a way to collect wlan logs and default close the logs in consumer.
-service cnss_diag /vendor/bin/cnss_diag -q -f
+service cnss_diag /vendor/bin/cnss_diag -q
     class main
     user system
     group system wifi inet net_admin sdcard_rw media_rw diag
