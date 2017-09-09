@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libgenlock
 
+# Doze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
