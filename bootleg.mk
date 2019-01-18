@@ -1,5 +1,5 @@
-# 
-# Copyright (C) 2018 The Mokee Project
+#
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,29 +18,26 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/MiuiCamera/tulip.mk)
 
-# Inherit from whyred device
-$(call inherit-product, device/xiaomi/whyred/device.mk)
+# Inherit from tulip device
+$(call inherit-product, device/xiaomi/tulip/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Mokee stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
-# Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
-PRODUCT_NAME := aosip_whyred
+PRODUCT_NAME := bootleg_tulip
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := whyred
+PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 5
+PRODUCT_MODEL := Redmi Note 6 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="whyred" \
-    PRODUCT_NAME="whyred" \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
-
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+    TARGET_DEVICE="tulip" \
+    PRODUCT_NAME="tulip" \
+    BUILD_FINGERPRINT="xiaomi/tulip/tulip:8.1.0/OPM1.171019.011/V10.2.1.0.OEICNFK:user/release-keys" \
+    PRIVATE_BUILD_DESC="tulip-user 8.1.0 OPM1.171019.011 V10.2.1.0.OEICNFK release-keys"
 
 TARGET_VENDOR := Xiaomi
