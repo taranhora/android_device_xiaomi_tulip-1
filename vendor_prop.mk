@@ -16,6 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1 \
     ro.com.android.dataroaming=true \
     ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.qti.config.zram=true \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
