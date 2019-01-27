@@ -389,3 +389,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QTI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Pie Telephony blobs
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qti.pie.telephony=1
