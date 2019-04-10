@@ -185,7 +185,6 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    fingerprintd \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip
 
 PRODUCT_COPY_FILES += \
@@ -216,8 +215,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-service-qti \
     libgnss \
     libgnsspps \
-    libsensorndkbridge \
-    libvehiclenetwork-native
+    libsensorndkbridge
 
 # Health
 PRODUCT_PACKAGES += \
@@ -418,9 +416,7 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
-    vendor.qti.hardware.wifi.supplicant@1.0_vendor \
     wificond \
-    wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
 
