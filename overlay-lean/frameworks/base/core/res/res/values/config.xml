@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018 AOSiP
+     Copyright (C) 2018 Lean
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,5 +15,9 @@
 <resources>
     <integer name="config_deviceHardwareKeys">64</integer>
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Whether to show HD icon in the status bar for volte -->
+    <bool name="config_display_hd_volte">true</bool>
+
 </resources>
 
