@@ -552,6 +552,14 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M 276.86,88
+        H -276.87
+        V 0
+        H 276.86
+        Z
+    </string>
+
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
         M-303,0
         L303,0
@@ -574,7 +582,8 @@
     </string>
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">88.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
+    <dimen name="rounded_corner_radius_top">96px</dimen>
 
     <!-- Whether device has a physical display cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
